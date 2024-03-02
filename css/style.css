@@ -1,0 +1,450 @@
+/*===================================================
+                DEFAULT VALUES
+                Scarlet             : 
+=====================================================*/
+
+/* Generic CSS */
+
+@font-face {
+    font-family: CeraGR;
+    src: url("../fonts/Cera-GR.otf") format("opentype");
+    src: url("../fonts/Cera-GR.woff") format("woff");
+}
+
+@font-face {
+    font-family: CeraGRBold;
+    src: url("../fonts/Cera-GR-Bold.otf") format("opentype");
+    src: url("../fonts/Cera-GR-Bold.woff") format("woff");
+}
+
+html,
+body {
+    height: 100% !important;
+}
+
+body {
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "CeraGRBold";
+}
+
+p,
+article {
+    font-family: "CeraGR";
+    color: #000;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*=============================================
+                Header
+===============================================*/
+#header .logo {
+    text-align: center;
+    padding: 10px 0;
+}
+
+#header .logo img {
+    height: auto;
+    width: auto;
+}
+
+/*=============================================
+                Slider
+===============================================*/
+section#slider {
+    padding: 0;
+}
+
+.skitter {
+    padding: 0;
+    margin: 0;
+    height: 90vh !important;
+}
+
+.skitter-large img {
+    height: 90vh !important;
+}
+
+.skitter .info_slide_dots {
+    bottom: 20px;
+}
+
+.label_skitter {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: none;
+}
+
+.label_skitter h1,
+.label_skitter h2,
+.label_skitter h3 {
+    color: #ff05c9;
+    text-transform: uppercase;
+    font-family: "CeraGRBold";
+}
+
+.label_skitter h1,
+.label_skitter h3 {
+    font-weight: bold;
+}
+
+.border-title h1 {
+    font-size: 50px;
+}
+
+.label_skitter p {
+    padding: 30px 0;
+    color: #000;
+    font-size: 16px;
+}
+
+.label_skitter a {
+    background: #000;
+    border: 0;
+    border-radius: 0;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.label_skitter a:hover {
+    background: #ff05c9;
+}
+
+.skitter .image > a {
+    cursor: default;
+}
+
+.skitter .info_slide_dots .image_number {
+    background: #000;
+}
+
+.skitter .info_slide_dots .image_number {
+    margin: 0px 5px 0px 5px;
+    border-radius: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.skitter .info_slide_dots .image_number:hover {
+    background: #ff05c9;
+}
+
+.skitter .info_slide_dots .image_number.image_number_select {
+    background: #ff05c9;
+}
+
+#slider .border-title {
+    border-left: 5px solid #ff05c9;
+    padding-left: 10px;
+}
+
+/*=============================================
+                Product
+===============================================*/
+.product-main-title {
+    text-align: center;
+}
+
+.product-main-title h1 {
+    text-transform: uppercase;
+    font-size: 35px;
+    display: inline-block;
+    border-bottom: 3px solid #000;
+    padding: 10px 0;
+}
+
+.product-item {
+    height: 550px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.product-thumbnail {
+    height: 550px;
+    position: relative;
+}
+
+.product-thumbnail img {
+    height: 100%;
+}
+
+.thumbnail-position {
+    background: url(../img/icon/1.png) no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    right: -35px;
+    top: 40px;
+}
+
+.product-item:nth-child(even) .thumbnail-position {
+    background: url(../img/icon/2.png) no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    left: -35px;
+}
+
+.product-content {
+    text-align: right;
+    padding-left: 70px;
+    height: 550px;
+    position: relative;
+}
+
+.product-item:nth-child(even) .product-content {
+    text-align: right;
+    right: 70px;
+    height: 450px;
+    position: relative;
+}
+
+.product-content-inner {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.product-content h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.product-content h3 {
+    font-size: 23px;
+    font-family: "ceraGR";
+}
+
+.product-pricing {
+    overflow: hidden;
+    border-bottom: 1px solid #000;
+    padding: 3px 0;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.product-pricing p.delivary {
+    float: left;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.product-pricing p.product-price {
+    float: right;
+    font-family: "CeraGRBold";
+    font-size: 23px;
+}
+
+a.show-now-btn {
+    display: inline-block;
+    border: 1px solid #000;
+    background: #000;
+    color: #fff;
+    padding: 8px 20px;
+    font-family: "CeraGR";
+    -webkit-transition: .5s;
+    transition: .5s;
+    font-weight: bold;
+}
+
+a.show-now-btn:hover {
+    border: 1px solid #ff05c9;
+    background: #ff05c9;
+}
+
+/*=============================================
+                Banner
+===============================================*/
+.banner-inner {
+    background: #0000008c;
+    text-align: center;
+    padding: 50px 200px;
+}
+
+.banner img {
+    height: auto;
+    width: auto;
+}
+
+.banner-inner p {
+    font-size: 25px;
+    margin: 20px 0;
+    color: #ddd;
+}
+
+.banner-inner h4 {
+    color: #fff;
+    font-size: 23px;
+}
+
+/*=============================================
+                Social
+===============================================*/
+#social {
+    background: #ddd;
+    padding: 40px 0;
+}
+
+.social-links {
+    text-align: center;
+}
+
+.social-links a {
+    border: 2px solid #000;
+    height: 75px;
+    width: 75px;
+    display: inline-block;
+    font-size: 40px;
+    margin: 0 20px;
+    padding: 7px 0;
+    color: #000;
+    -webkit-transition: .5s;
+    transition: .5s;
+    border-radius: 50%;
+}
+.social-links a svg{
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.social-links a:hover {
+    border: 2px solid #ff05c9;
+    background: #ff05c9;
+    color: #fff;
+}
+
+
+.social-links a:hover svg{
+    transform: rotate(360deg);
+}
+
+/*=============================================
+                Contact
+===============================================*/
+#contact {
+    background: #b11e91;
+    padding: 50px 0;
+}
+
+.contact-inner {
+    text-align: center
+}
+
+.contact-title h1 {
+    text-transform: uppercase;
+    font-size: 35px;
+    display: inline-block;
+    border-bottom: 3px solid #000;
+    padding: 10px 0;
+    color: #000;
+}
+
+.contact-form {
+    padding: 50px 0;
+}
+
+.contact-form input {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #000;
+    background: none;
+    color: #fff;
+    outline: 0;
+    padding: 7px 0;
+}
+
+.contact-form input::-webkit-input-placeholder {
+    color: #000;
+}
+
+.contact-form input:-ms-input-placeholder {
+    color: #000;
+}
+
+.contact-form input::placeholder {
+    color: #000;
+}
+
+.contact-form button {
+    width: 100%;
+    border: 2px solid #000;
+    color: #000;
+    outline: 0;
+    background: none;
+    padding: 7px 0;
+    -webkit-transition: .5s;
+    transition: .5s;
+    text-transform: uppercase;
+}
+
+.contact-form button:hover {
+    border: 2px solid #fff;
+    color: #000;
+    background: #fff;
+}
+
+/*=============================================
+                Footer
+===============================================*/
+.footer-inner {
+    background: #000;
+    text-align: center;
+}
+
+.footer-inner p {
+    color: #fff;
+    padding: 20px 0;
+    margin-bottom: 0;
+}
+
+/*=============================================
+               Back to top
+===============================================*/
+.btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    margin: 0;
+    border: 2px solid #ff05c9;
+    color: #ff05c9 !important;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    padding: 4px 0;
+    display: none;
+    text-align: center;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.btn-back-to-top:hover {
+    color: #fff !important;
+    background: #ff05c9;
+}

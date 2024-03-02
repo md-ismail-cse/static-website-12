@@ -1,0 +1,154 @@
+/*==================================================
+			Bootstrap 3 Media Queries         
+==================================================*/
+
+/* Large Devices (Desktops & Laptops) */
+
+@media (min-width: 1200px) {
+    /* Ok */
+}
+
+/* Medium Devices (Landscape Tablets & Medium Desktops) */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Ok */
+}
+
+/* Small Devices (Portrait Tablets & Small Desktops) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .product-item {
+        height: 450px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .product-thumbnail {
+        height: 450px;
+    }
+
+    .product-content {
+        height: 450px;
+    }
+    
+}
+
+/* Extra Small Devices (Landscape Phones & Portrait Tablets) */
+
+@media (max-width: 767px) {
+
+    .label_skitter h2 {
+        font-size: 20px;
+    }
+
+    .label_skitter h1 {
+        font-size: 30px;
+    }
+
+    .label_skitter h3 {
+        font-size: 25px;
+    }
+
+    .skitter {
+        padding: 0;
+        margin: 0;
+        height: 400px !important;
+    }
+
+    .skitter-large img {
+        height: 400px !important;
+    }
+
+    .label_skitter {
+        top: 40%;
+    }
+
+    .product-thumbnail {
+        margin-bottom: 20px;
+    }
+
+    .contact-form input {
+        margin-bottom: 15px;
+    }
+
+    .banner-inner {
+        padding: 55px 50px;
+    }
+
+}
+
+@media (max-width:640px) {
+    section {
+        background-attachment: initial;
+    }
+}
+
+/* Extra Small Devices (Portrait Phones & Smaller devices) */
+
+@media (max-width: 480px) {
+    .label_skitter h2 {
+        font-size: 18px;
+    }
+
+    .label_skitter h1 {
+        font-size: 28px;
+    }
+
+    .label_skitter h3 {
+        font-size: 22px;
+    }
+
+    .label_skitter p {
+        padding: 20px 0;
+        font-size: 14px;
+    }
+
+    .product-main-title h1 {
+        font-size: 25px;
+    }
+
+    .product-item {
+        height: 400px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .product-thumbnail {
+        height: 400px;
+    }
+
+    .product-content {
+        text-align: left;
+        padding-left: 0;
+        height: 400px;
+    }
+
+    .product-item:nth-child(even) .product-content {
+        text-align: left;
+        right: 0;
+        height: 400px;
+    }
+
+    .banner-inner {
+        padding: 55px 10px;
+    }
+
+    .social-links a {
+        height: 45px;
+        width: 45px;
+        font-size: 27px;
+        margin: 0 10px;
+        padding: 2px 0;
+    }
+
+    .contact-title h1 {
+        font-size: 25px;
+    }
+
+}
+
+/* Extra Small Devices (Portrait Phones & Smaller devices) */
+
+@media (max-width: 320px) {
+    /* Ok */
+}
